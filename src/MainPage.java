@@ -18,7 +18,7 @@ public class MainPage extends JFrame {
     public MainPage(Connection connection) {
         this.connection = connection;
 
-        ImageIcon logo = new ImageIcon(getClass().getResource("/mandarin-transformed.png"));
+        ImageIcon logo = new ImageIcon(getClass().getResource("/Resource/mandarin-transformed.png"));
         Image img = logo.getImage();
         Image scaledImg = img.getScaledInstance(200, 200, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon scaledLogo = new ImageIcon(scaledImg);
@@ -40,7 +40,7 @@ public class MainPage extends JFrame {
 
         //Furniture
 
-        ImageIcon furlogo = new ImageIcon(getClass().getResource("/Furniture_image-removebg-preview.png"));
+        ImageIcon furlogo = new ImageIcon(getClass().getResource("/Resource/Furniture_image-removebg-preview.png"));
         Image furimg = furlogo.getImage();
         Image furscaledImg = furimg.getScaledInstance(140, 140, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon furscaledLogo = new ImageIcon(furscaledImg);
@@ -62,7 +62,7 @@ public class MainPage extends JFrame {
 
         //Electronics
 
-        ImageIcon elelogo = new ImageIcon(getClass().getResource("/Electronics_image-removebg-preview.png"));
+        ImageIcon elelogo = new ImageIcon(getClass().getResource("/Resource/Electronics_image-removebg-preview.png"));
         Image eleimg = elelogo.getImage();
         Image elescaledImg = eleimg.getScaledInstance(140, 140, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon elescaledLogo = new ImageIcon(elescaledImg);
@@ -82,7 +82,7 @@ public class MainPage extends JFrame {
         btn2.setEnabled(true);
 
         //Miscellaneous
-        ImageIcon mislogo = new ImageIcon(getClass().getResource("/Miscellaneous_image-removebg-preview.png"));
+        ImageIcon mislogo = new ImageIcon(getClass().getResource("/Resource/Miscellaneous_image-removebg-preview.png"));
         Image misimg = mislogo.getImage();
         Image misscaledImg = misimg.getScaledInstance(140, 140, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon misscaledLogo = new ImageIcon(misscaledImg);
@@ -103,7 +103,7 @@ public class MainPage extends JFrame {
         btn3.setEnabled(true);
 
         //clean
-        ImageIcon cllogo = new ImageIcon(getClass().getResource("/Clean_image-removebg-preview.png"));
+        ImageIcon cllogo = new ImageIcon(getClass().getResource("/Resource/Clean_image-removebg-preview.png"));
         Image climg = cllogo.getImage();
         Image clscaledImg = climg.getScaledInstance(140, 140, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon clscaledLogo = new ImageIcon(clscaledImg);
@@ -129,7 +129,7 @@ public class MainPage extends JFrame {
         frame.add(row2panel);
 
         //Kitchen
-        ImageIcon klogo = new ImageIcon(getClass().getResource("/Kitchen_image-removebg-preview.png"));
+        ImageIcon klogo = new ImageIcon(getClass().getResource("/Resource/Kitchen_image-removebg-preview.png"));
         Image kimg = klogo.getImage();
         Image kscaledImg = kimg.getScaledInstance(140, 140, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon kscaledLogo = new ImageIcon(kscaledImg);
@@ -150,7 +150,7 @@ public class MainPage extends JFrame {
 
 
         //Laundry
-        ImageIcon lalogo = new ImageIcon(getClass().getResource("/Laundry_image-removebg-preview.png"));
+        ImageIcon lalogo = new ImageIcon(getClass().getResource("/Resource/Laundry_image-removebg-preview.png"));
         Image laimg = lalogo.getImage();
         Image lascaledImg = laimg.getScaledInstance(140, 140, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon lascaledLogo = new ImageIcon(lascaledImg);
@@ -170,7 +170,7 @@ public class MainPage extends JFrame {
         btn7.setEnabled(true);
 
         //Room Inventory
-        ImageIcon rlogo = new ImageIcon(getClass().getResource("/Room.png"));
+        ImageIcon rlogo = new ImageIcon(getClass().getResource("/Resource/Room.png"));
         Image rimg = rlogo.getImage();
         Image rscaledImg = rimg.getScaledInstance(140, 140, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon rscaledLogo = new ImageIcon(rscaledImg);
@@ -276,3 +276,4 @@ public class MainPage extends JFrame {
     }
 
 }
+

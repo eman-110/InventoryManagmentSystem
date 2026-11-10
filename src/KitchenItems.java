@@ -61,7 +61,7 @@ public class KitchenItems extends JFrame {
 
 
         //Frame
-        ImageIcon logo = new ImageIcon(getClass().getResource("/mandarin-transformed.png"));
+        ImageIcon logo = new ImageIcon(getClass().getResource("/Resource/mandarin-transformed.png"));
         Image img = logo.getImage();
         Image scaledImg = img.getScaledInstance(200, 200, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon scaledLogo = new ImageIcon(scaledImg);
@@ -98,7 +98,7 @@ public class KitchenItems extends JFrame {
 
 
         //image
-        ImageIcon logo1 = new ImageIcon(getClass().getResource("/K1.png"));
+        ImageIcon logo1 = new ImageIcon(getClass().getResource("/Resource/K1.png"));
         Image img1 = logo1.getImage();
         Image scaledImg1 = img1.getScaledInstance(250, 200, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon scaledLogo1 = new ImageIcon(scaledImg1);
@@ -267,7 +267,7 @@ public class KitchenItems extends JFrame {
 
 
         //Image
-        ImageIcon logo3 = new ImageIcon(getClass().getResource("/K2.png"));
+        ImageIcon logo3 = new ImageIcon(getClass().getResource("/Resource/K2.png"));
         Image img3 = logo3.getImage();
         Image scaledImg3 = img3.getScaledInstance(250, 200, Image.SCALE_SMOOTH); // Set your desired width and height
         ImageIcon scaledLogo3 = new ImageIcon(scaledImg3);
@@ -555,6 +555,7 @@ public class KitchenItems extends JFrame {
         }
     }
 }
+
 
 
 

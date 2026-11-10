@@ -19,7 +19,7 @@ public class Login extends JFrame {
     public Login(Connection connection) {
         this.connection = connection;
         // Load image from resources
-        ImageIcon logo = new ImageIcon(getClass().getResource("/mandarin-transformed.png"));
+        ImageIcon logo = new ImageIcon(getClass().getResource("/Resource/mandarin-transformed.png"));
 
         Image img = logo.getImage();
         Image scaledImg = img.getScaledInstance(200, 200, Image.SCALE_SMOOTH); // Set your desired width and height
@@ -152,6 +152,7 @@ public class Login extends JFrame {
         }
     }
 }
+
 
 
 

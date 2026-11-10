@@ -45,7 +45,7 @@ public class Room extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // Frame icon
-        ImageIcon logo = new ImageIcon(getClass().getResource("/mandarin-transformed.png"));
+        ImageIcon logo = new ImageIcon(getClass().getResource("/Resource/mandarin-transformed.png"));
         Image img = logo.getImage().getScaledInstance(200, 200, Image.SCALE_SMOOTH);
         setIconImage(new ImageIcon(img).getImage());
 
@@ -68,7 +68,7 @@ public class Room extends JFrame {
         mainPanel.add(leftPanel, BorderLayout.WEST);
 
         // Add logo to the left panel
-        ImageIcon logo1 = new ImageIcon(getClass().getResource("/R1.png"));
+        ImageIcon logo1 = new ImageIcon(getClass().getResource("/Resource/R1.png"));
         Image img1 = logo1.getImage().getScaledInstance(250, 200, Image.SCALE_SMOOTH);
         JLabel label = new JLabel(new ImageIcon(img1));
         leftPanel.add(label);
@@ -235,3 +235,4 @@ public class Room extends JFrame {
     }
 
 }
+

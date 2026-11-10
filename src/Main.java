@@ -1,25 +1,18 @@
 import java.sql.Connection;
-import java.sql.DriverManager;
-import java.lang.Thread;
+import javax.swing.SwingUtilities;
 
 public class Main {
     public static void main(String[] args) {
-        // Create a MySQL connection (replace with your own connection details)
-        try {
-            Connection connection = MySQLConnection.getConnection();
-
-            // Pass the connection to the Front1 constructor
-            new Login(connection);
-        }
-        catch (Exception e){
-            System.out.println(e);
+        SwingUtilities.invokeLater(() -> {
             try {
-                // Handle InterruptedException
-                Thread.sleep(100000);
-            } catch (InterruptedException ie) {
-                System.out.println("Sleep interrupted: " + ie);
+                Connection connection = MySQLConnection.getConnection();
+                if (connection == null) {
+                    System.out.println("Database connection unavailable. Starting the app in offline mode.");
+                }
+                new Login(connection);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        }
-        // This will now work since connection is passed
+        });
     }
 }
